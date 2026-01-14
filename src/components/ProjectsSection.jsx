@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Weather App",
     description: "A web-based weather app that fetches and displays real-time weather data based on user input. Built to practice API usage, data handling, and responsive UI design.",
-    image: "/projects/project2.jpg",
+   image: `${import.meta.env.BASE_URL}projects/project2.jpg`,
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://anshu-kr576.github.io/Weather-App/",
     githubUrl: "https://github.com/anshu-kr576/Weather-App.git",
@@ -15,7 +15,7 @@ const projects = [
     title: "To-Do List",
     description:
       "A simple to-do list application designed to manage daily tasks. Built to practice core web development concepts such as DOM manipulation, state handling, and user interaction.",
-    image: "/projects/project3.jpg",
+   image: `${import.meta.env.BASE_URL}projects/project3.jpg`,
     tags: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://anshu-kr576.github.io/To-Do-List/",
     githubUrl: "https://github.com/anshu-kr576/To-Do-List.git",
@@ -25,7 +25,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "An e-commerce platform that demonstrates product browsing and basic cart functionality. Built as a learning project to practice modern web development and responsive layouts.",
-    image: "/projects/project1.jpg",
+    image: `${import.meta.env.BASE_URL}projects/project1.jpg`,
     tags: ["React", "Node.js", "MongoDB"],
     demoUrl: "#",
     githubUrl: "#",
