@@ -19,7 +19,7 @@ export const Footer = () => {
           <a href="https://github.com/anshu-kr576/anshu-kr576.git" className="hover:text-primary transition">
             <Github size={18} />
           </a>
-          <a href="www.linkedin.com/in/anshu-kumar-261020333" className="hover:text-primary transition">
+          <a href="https://www.linkedin.com/in/anshu-kumar-261020333" className="hover:text-primary transition">
             <Linkedin size={18} />
           </a>
           <a href="mailto:anshuking576@gmail.com" className="hover:text-primary transition">
