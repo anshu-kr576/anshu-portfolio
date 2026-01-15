@@ -1,21 +1,21 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import path from 'path'
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+// import tailwindcss from '@tailwindcss/vite'
+// import path from 'path'
 
 // https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  base: '/anshu-portfolio/',
-   build: {
-    outDir: 'docs',   // 👈 ADD ONLY THIS
-  },
-   resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
-});
+// export default defineConfig({
+//   plugins: [react(), tailwindcss()],
+//   base: '/anshu-portfolio/',
+//    build: {
+//     outDir: 'docs',   // 👈 ADD ONLY THIS
+//   },
+//    resolve: {
+//     alias: {
+//       "@": path.resolve(__dirname, "./src"),
+//     },
+//   },
+// });
 
 // import { defineConfig } from "vite";
 // import react from "@vitejs/plugin-react";
@@ -31,4 +31,20 @@ export default defineConfig({
 //     },
 //   },
 // }));
+
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  base: "/", // ✅ Vercel ke liye
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+});
+
 
